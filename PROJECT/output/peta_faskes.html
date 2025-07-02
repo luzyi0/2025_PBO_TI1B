@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d8419936b94535ebf9c08cc75215a553 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_div {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d8419936b94535ebf9c08cc75215a553" ></div>
+        
+    
+            <div class="folium-map" id="map_div" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d8419936b94535ebf9c08cc75215a553 = L.map(
+                "map_d8419936b94535ebf9c08cc75215a553",
+                {
+                    center: [-7.029374387601962, 110.37953560884178],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_08ca0d9c7719b9ab183cb995eb71561d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_08ca0d9c7719b9ab183cb995eb71561d.addTo(map_d8419936b94535ebf9c08cc75215a553);
+        
+    
+            var marker_121c0379d8f127613341ff8a0d3e574f = L.marker(
+                [-7.558952709259768, 110.8417420534814],
+                {
+}
+            ).addTo(map_d8419936b94535ebf9c08cc75215a553);
+        
+    
+            var icon_e18c56d5621ed5a9aa923a7a148ec482 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb0a8db98a3fc0bb91168ed22c14eb15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ff21b06d42b23f0d8ddd1b529b504a2 = $(`<div id="html_5ff21b06d42b23f0d8ddd1b529b504a2" style="width: 100.0%; height: 100.0%;"><b>IGD RSUD Dr.Moewardi</b><br><i>Rumah Sakit</i><br>CRRR+8MH, Jebres, Kec. Jebres, Kota Surakarta, Jawa Tengah 57126</div>`)[0];
+                popup_cb0a8db98a3fc0bb91168ed22c14eb15.setContent(html_5ff21b06d42b23f0d8ddd1b529b504a2);
+            
+        
+
+        marker_121c0379d8f127613341ff8a0d3e574f.bindPopup(popup_cb0a8db98a3fc0bb91168ed22c14eb15)
+        ;
+
+        
+    
+    
+            marker_121c0379d8f127613341ff8a0d3e574f.bindTooltip(
+                `<div>
+                     IGD RSUD Dr.Moewardi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_121c0379d8f127613341ff8a0d3e574f.setIcon(icon_e18c56d5621ed5a9aa923a7a148ec482);
+            
+    
+            var marker_db6173fe3efe4696e6562c8232665633 = L.marker(
+                [-7.0483019927241735, 110.39413260058512],
+                {
+}
+            ).addTo(map_d8419936b94535ebf9c08cc75215a553);
+        
+    
+            var icon_2b9a9969e66b96bff544a1af7a07a7dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d58d5ef5955a0ee11e39e4f586bf8bef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbce676e74e049e4ba61516db9dba39f = $(`<div id="html_fbce676e74e049e4ba61516db9dba39f" style="width: 100.0%; height: 100.0%;"><b>Pusat Layanan Kesehatan (PUSLAKES) UNNES</b><br><i>Klinik</i><br>Gedung Puslakes, Jl. Taman Siswa, Sekaran, Gunung Pati, Semarang City, Central Java 50229</div>`)[0];
+                popup_d58d5ef5955a0ee11e39e4f586bf8bef.setContent(html_fbce676e74e049e4ba61516db9dba39f);
+            
+        
+
+        marker_db6173fe3efe4696e6562c8232665633.bindPopup(popup_d58d5ef5955a0ee11e39e4f586bf8bef)
+        ;
+
+        
+    
+    
+            marker_db6173fe3efe4696e6562c8232665633.bindTooltip(
+                `<div>
+                     Pusat Layanan Kesehatan (PUSLAKES) UNNES
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db6173fe3efe4696e6562c8232665633.setIcon(icon_2b9a9969e66b96bff544a1af7a07a7dc);
+            
+    
+            var marker_397ae642dfb5773849146f8c2f555640 = L.marker(
+                [-7.051769848725309, 110.39341718046106],
+                {
+}
+            ).addTo(map_d8419936b94535ebf9c08cc75215a553);
+        
+    
+            var icon_25b17a3634e9dfad472c6fc360a8a712 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd5eca78388075890e14d2f2f26c603f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d4d11840148562e63c96ada11d5a2fe = $(`<div id="html_4d4d11840148562e63c96ada11d5a2fe" style="width: 100.0%; height: 100.0%;"><b>Puskesmas Sekaran</b><br><i>Puskesmas</i><br>Gg. Rambutan No.44, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50229</div>`)[0];
+                popup_fd5eca78388075890e14d2f2f26c603f.setContent(html_4d4d11840148562e63c96ada11d5a2fe);
+            
+        
+
+        marker_397ae642dfb5773849146f8c2f555640.bindPopup(popup_fd5eca78388075890e14d2f2f26c603f)
+        ;
+
+        
+    
+    
+            marker_397ae642dfb5773849146f8c2f555640.bindTooltip(
+                `<div>
+                     Puskesmas Sekaran
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_397ae642dfb5773849146f8c2f555640.setIcon(icon_25b17a3634e9dfad472c6fc360a8a712);
+            
+    
+            var marker_bcb0deec17dcadf2637a2ef435acc89e = L.marker(
+                [-6.985685705989119, 110.41267745347594],
+                {
+}
+            ).addTo(map_d8419936b94535ebf9c08cc75215a553);
+        
+    
+            var icon_fd8b608eed993fcbb5ebc703f6f81dcd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f18f755c653d44ac3f2ca3720de39482 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5e04e544c52316ddb7460cf6b4c1f5c = $(`<div id="html_e5e04e544c52316ddb7460cf6b4c1f5c" style="width: 100.0%; height: 100.0%;"><b>Rumah Sakit Umum Hermina Pandanaran</b><br><i>Rumah Sakit</i><br>Jl. Pandanaran No.24, Pekunden, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50134</div>`)[0];
+                popup_f18f755c653d44ac3f2ca3720de39482.setContent(html_e5e04e544c52316ddb7460cf6b4c1f5c);
+            
+        
+
+        marker_bcb0deec17dcadf2637a2ef435acc89e.bindPopup(popup_f18f755c653d44ac3f2ca3720de39482)
+        ;
+
+        
+    
+    
+            marker_bcb0deec17dcadf2637a2ef435acc89e.bindTooltip(
+                `<div>
+                     Rumah Sakit Umum Hermina Pandanaran
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bcb0deec17dcadf2637a2ef435acc89e.setIcon(icon_fd8b608eed993fcbb5ebc703f6f81dcd);
+            
+    
+            var marker_8bea11a570a9649c8af41daf9aa31de0 = L.marker(
+                [-6.996713461064137, 110.40505530929642],
+                {
+}
+            ).addTo(map_d8419936b94535ebf9c08cc75215a553);
+        
+    
+            var icon_73230d2ea4aacb2d30ac8b8b0ce0c310 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c75011b593927da4373cec33e431683d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed95eff3370af4c239d55e531dba1b38 = $(`<div id="html_ed95eff3370af4c239d55e531dba1b38" style="width: 100.0%; height: 100.0%;"><b>Rumah Sakit Umum William Booth</b><br><i>Rumah Sakit</i><br>Jl. Letnan Jenderal S. Parman No.5, Petompon, Kec. Gajahmungkur, Kota Semarang, Jawa Tengah 50237</div>`)[0];
+                popup_c75011b593927da4373cec33e431683d.setContent(html_ed95eff3370af4c239d55e531dba1b38);
+            
+        
+
+        marker_8bea11a570a9649c8af41daf9aa31de0.bindPopup(popup_c75011b593927da4373cec33e431683d)
+        ;
+
+        
+    
+    
+            marker_8bea11a570a9649c8af41daf9aa31de0.bindTooltip(
+                `<div>
+                     Rumah Sakit Umum William Booth
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8bea11a570a9649c8af41daf9aa31de0.setIcon(icon_73230d2ea4aacb2d30ac8b8b0ce0c310);
+            
+    
+            tile_layer_08ca0d9c7719b9ab183cb995eb71561d.addTo(map_d8419936b94535ebf9c08cc75215a553);
+        
+    
+                marker_121c0379d8f127613341ff8a0d3e574f.setIcon(icon_e18c56d5621ed5a9aa923a7a148ec482);
+            
+    
+                marker_db6173fe3efe4696e6562c8232665633.setIcon(icon_2b9a9969e66b96bff544a1af7a07a7dc);
+            
+    
+                marker_397ae642dfb5773849146f8c2f555640.setIcon(icon_25b17a3634e9dfad472c6fc360a8a712);
+            
+    
+                marker_bcb0deec17dcadf2637a2ef435acc89e.setIcon(icon_fd8b608eed993fcbb5ebc703f6f81dcd);
+            
+    
+                marker_8bea11a570a9649c8af41daf9aa31de0.setIcon(icon_73230d2ea4aacb2d30ac8b8b0ce0c310);
+            
+    
+            var map_div = L.map(
+                "map_div",
+                {
+                    center: [-7.029374387601962, 110.37953560884178],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_div_0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_08ca0d9c7719b9ab183cb995eb71561d.addTo(map_d8419936b94535ebf9c08cc75215a553);
+        
+    
+            tile_layer_div_0.addTo(map_div);
+        
+    
+            var marker_div_1 = L.marker(
+                [-7.558952709259768, 110.8417420534814],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var icon_div_1_0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_div_1_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ff21b06d42b23f0d8ddd1b529b504a2 = $(`<div id="html_5ff21b06d42b23f0d8ddd1b529b504a2" style="width: 100.0%; height: 100.0%;"><b>IGD RSUD Dr.Moewardi</b><br><i>Rumah Sakit</i><br>CRRR+8MH, Jebres, Kec. Jebres, Kota Surakarta, Jawa Tengah 57126</div>`)[0];
+                popup_div_1_1.setContent(html_5ff21b06d42b23f0d8ddd1b529b504a2);
+            
+        
+
+        marker_div_1.bindPopup(popup_div_1_1)
+        ;
+
+        
+    
+    
+            marker_div_1.bindTooltip(
+                `<div>
+                     IGD RSUD Dr.Moewardi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_1.setIcon(icon_div_1_0);
+            
+    
+                marker_div_1.setIcon(icon_div_1_0);
+            
+    
+                marker_div_1.setIcon(icon_div_1_0);
+            
+    
+            var marker_div_2 = L.marker(
+                [-7.0483019927241735, 110.39413260058512],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var icon_div_2_0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_div_2_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbce676e74e049e4ba61516db9dba39f = $(`<div id="html_fbce676e74e049e4ba61516db9dba39f" style="width: 100.0%; height: 100.0%;"><b>Pusat Layanan Kesehatan (PUSLAKES) UNNES</b><br><i>Klinik</i><br>Gedung Puslakes, Jl. Taman Siswa, Sekaran, Gunung Pati, Semarang City, Central Java 50229</div>`)[0];
+                popup_div_2_1.setContent(html_fbce676e74e049e4ba61516db9dba39f);
+            
+        
+
+        marker_div_2.bindPopup(popup_div_2_1)
+        ;
+
+        
+    
+    
+            marker_div_2.bindTooltip(
+                `<div>
+                     Pusat Layanan Kesehatan (PUSLAKES) UNNES
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_2.setIcon(icon_div_2_0);
+            
+    
+                marker_div_2.setIcon(icon_div_2_0);
+            
+    
+                marker_div_2.setIcon(icon_div_2_0);
+            
+    
+            var marker_div_3 = L.marker(
+                [-7.051769848725309, 110.39341718046106],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var icon_div_3_0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_div_3_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d4d11840148562e63c96ada11d5a2fe = $(`<div id="html_4d4d11840148562e63c96ada11d5a2fe" style="width: 100.0%; height: 100.0%;"><b>Puskesmas Sekaran</b><br><i>Puskesmas</i><br>Gg. Rambutan No.44, Sekaran, Kec. Gn. Pati, Kota Semarang, Jawa Tengah 50229</div>`)[0];
+                popup_div_3_1.setContent(html_4d4d11840148562e63c96ada11d5a2fe);
+            
+        
+
+        marker_div_3.bindPopup(popup_div_3_1)
+        ;
+
+        
+    
+    
+            marker_div_3.bindTooltip(
+                `<div>
+                     Puskesmas Sekaran
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_3.setIcon(icon_div_3_0);
+            
+    
+                marker_div_3.setIcon(icon_div_3_0);
+            
+    
+                marker_div_3.setIcon(icon_div_3_0);
+            
+    
+            var marker_div_4 = L.marker(
+                [-6.985685705989119, 110.41267745347594],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var icon_div_4_0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_div_4_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5e04e544c52316ddb7460cf6b4c1f5c = $(`<div id="html_e5e04e544c52316ddb7460cf6b4c1f5c" style="width: 100.0%; height: 100.0%;"><b>Rumah Sakit Umum Hermina Pandanaran</b><br><i>Rumah Sakit</i><br>Jl. Pandanaran No.24, Pekunden, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50134</div>`)[0];
+                popup_div_4_1.setContent(html_e5e04e544c52316ddb7460cf6b4c1f5c);
+            
+        
+
+        marker_div_4.bindPopup(popup_div_4_1)
+        ;
+
+        
+    
+    
+            marker_div_4.bindTooltip(
+                `<div>
+                     Rumah Sakit Umum Hermina Pandanaran
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_4.setIcon(icon_div_4_0);
+            
+    
+                marker_div_4.setIcon(icon_div_4_0);
+            
+    
+                marker_div_4.setIcon(icon_div_4_0);
+            
+    
+            var marker_div_5 = L.marker(
+                [-6.996713461064137, 110.40505530929642],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var icon_div_5_0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_div_5_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed95eff3370af4c239d55e531dba1b38 = $(`<div id="html_ed95eff3370af4c239d55e531dba1b38" style="width: 100.0%; height: 100.0%;"><b>Rumah Sakit Umum William Booth</b><br><i>Rumah Sakit</i><br>Jl. Letnan Jenderal S. Parman No.5, Petompon, Kec. Gajahmungkur, Kota Semarang, Jawa Tengah 50237</div>`)[0];
+                popup_div_5_1.setContent(html_ed95eff3370af4c239d55e531dba1b38);
+            
+        
+
+        marker_div_5.bindPopup(popup_div_5_1)
+        ;
+
+        
+    
+    
+            marker_div_5.bindTooltip(
+                `<div>
+                     Rumah Sakit Umum William Booth
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_5.setIcon(icon_div_5_0);
+            
+    
+                marker_div_5.setIcon(icon_div_5_0);
+            
+    
+                marker_div_5.setIcon(icon_div_5_0);
+            
+</script>
+</html>
